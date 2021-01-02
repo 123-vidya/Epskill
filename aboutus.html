@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.column {
+  float: left;
+  width: 33.3%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  margin: 8px;
+}
+
+.about-section {
+  padding: 50px;
+  text-align: center;
+  background-color: #474e5d;
+  color: white;
+}
+
+.container {
+  padding: 0 16px;
+}
+
+.container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.title {
+  color: grey;
+}
+
+.button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+}
+
+.button:hover {
+  background-color: #555;
+}
+
+@media screen and (max-width: 650px) {
+  .column {
+    width: 100%;
+    display: block;
+  }
+}
+</style>
+</head>
+<body>
+
+<div class="about-section">
+  <h1>About Us Page</h1>
+  <p>The Koneru Lakshmaiah Charities was established as a trust in the year 1980 with its official address at Museum road, Governorpet, Vijayawada, Andhra Pradesh 520 002 and started KL College of Engineering in the Academic year 1980-81.
+
+KL Deemed to be University was established in 1980-81, as KL College of Engineering, which was upgraded to KL College of Engineering Autonomous in 2006 by UGC, and was declared as a Deemed to be University in 2009 by UGC, MHRD Govt.of India. In 2012 as a Deemed to be University the institution was accredited by NAAC with A Grade and later in 2018, was re-accredited by NAAC with A++ grade. In 2019 UGC, MHRD declared this institution as Category I Institution.</p>
+ 
+</div>
+
+<h2 style="text-align:center">K L Deemed To be University</h2>
+<div class="row">
+  <div class="column">
+    <div class="card">
+      <img height= 400px width= 500px src="campus.jpg" alt="Wedding Events" style="width:100%">
+      <div class="container">
+        <h2>CAMPUS</h2>
+        <p class="title"></p>
+        <p>The campus is a self-sufficient enclave with blacktop & well-lit roads. Its facilities include STD/ISD pay phones, fax, courier service, a bookstore for all kinds of textbooks, stationary, copier facilities, laundry facilities and a digital photo studio. 100% Standby power generators are provided inside the campus and hostels. A cable television facility is also provided in hostels.</p>
+        
+        <p><button class="button">KNOW MORE</button></p>
+      </div>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card">
+      <img height= 400px width= 500px  src="hostels.jpg" alt="Mike" style="width:100%">
+      <div class="container">
+        <h2>HOSTELS</h2>
+        <p class="title"></p>
+        <!-- <p>We provide various and vivid type of Birthday events in a reasonable price.</p> -->
+        <p>Protected drinking water, state of the art kitchen, dining hall, and newspapers, public telephones are available. Toilets and restrooms are well maintained. Every student in the hostel is provided with basic amenities such as a cot, study table, chair and a rack. Each room is also well ventilated.></p>
+
+        <p><button class="button">Know more</button></p>
+      </div>
+    </div>
+  </div>
+  
+  <div class="column">
+    <div class="card">
+      <img height= 400px width= 500px  src="library.jpg" alt="John" style="width:100%">
+      <div class="container">
+        <h2>CENTRAL LIBRARY</h2>
+        <p class="title"></p>
+        <p>The Central Library of KLEF holds a large number of materials to serve the whole KLEF community. It holds materials relevant to the Engineering, Science & Humanities courses offered by the KLEF, and includes Agricultural Engineering, Pharmacy, Law and specialist books and journals.</p>
+        
+        <p><button class="button">Know more</button></p>
+      </div>
+    </div>
+  </div>
+
+  
+</div>
+
+</body>
+</html>
